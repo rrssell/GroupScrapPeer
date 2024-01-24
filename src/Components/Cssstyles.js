@@ -71,7 +71,6 @@ export const CardWrapper = styled.div`
         margin: 0 0 0 5%;
     }
 
-    
     div:nth-child(2) > p:nth-child(1) {
         font-size: 20px;
         font-weight: 700;
