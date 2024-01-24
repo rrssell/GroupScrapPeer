@@ -12,3 +12,18 @@
     z-index: 1;
 }
 .bt{
+    margin-left: 50%;
+    margin-top: 60px;
+    background-color: antiquewhite;
+    height: 40px;
+    width: 102px;
+    border-radius: 4px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    z-index: 1;
+}
+.listview{
+    margin-top: 4%;
+}
+.ho{
+    margin: 4%;
+}
