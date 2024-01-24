@@ -105,3 +105,152 @@ function FiltCar() {
       </div>
       <br />
       <hr />
+      <div style={{ color: "rgba(0,47,52,.64)", marginBottom: "3%" }}>
+        Filters
+      </div>
+
+      <div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            border: "1px solid black",
+            width: "90%",
+            padding: "5%",
+          }}
+        >
+          <input
+            style={{ border: "none" }}
+            type="text"
+            placeholder="Search brand or model"
+          />
+          <div style={{ flexGrow: "1" }}></div>
+          <SearchOutlined />
+        </div>
+      </div>
+      <br />
+
+      <div>ALL BRANDS</div>
+      <div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+            value="Maruti Suzuki"
+            checked={brand.includes("Maruti Suzuki")}
+            onChange={handleChange}
+          />
+          Maruti Suzuki
+        </div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+            value="Toyota"
+            checked={brand.includes("Toyota")}
+            onChange={handleChange}
+          />
+          Toyota
+        </div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+            value="Mercedes-Benz"
+            checked={brand.includes("Mercedes-Benz")}
+            onChange={handleChange}
+          />
+          Mercedes-Benz
+        </div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+            value="Jaguar"
+            checked={brand.includes("Jaguar")}
+            onChange={handleChange}
+          />
+          Jaguar
+        </div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+            value="Land Rover"
+            checked={brand.includes("Land Rover")}
+            onChange={handleChange}
+          />
+          Land Rover
+        </div>
+      </div>
+      <br />
+      <hr />
+
+      <div>ALL Models</div>
+      <div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+          />
+          Swift
+        </div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+          />
+          Fortuner
+        </div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+          />
+          GLA
+        </div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+          />
+          XL5
+        </div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+          />
+          Defender
+        </div>
+      </div>
+      <br />
+
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ marginRight: "10px" }}>BUDGET</div>
+        <div style={{ flexGrow: "1" }}></div>
+        {!budget ? (
+          <DownOutlined onClick={() => setBudget(!budget)} />
+        ) : (
+          <UpOutlined onClick={() => setBudget(!budget)} />
+        )}
+      </div>
+
+      {budget && (
+        <div>
+          <div style={{ marginTop: "5px", marginBottom: "5px" }}>
+            Choose from options below
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "black",
+              padding: "2% 5%",
+            }}
+          >
+            Below 1 Lac
+          </div>
+          <div
