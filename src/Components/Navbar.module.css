@@ -50,7 +50,6 @@
     margin-left:30px;
     border-radius: 5px;
 }
-
 .s2{
     
   border:white;
@@ -101,4 +100,46 @@
     /* border:1px solid blue; */
 
 
+}
+*:focus {
+    outline: blue;
+  }
+  div>a{
+    color:black;
+    text-decoration: none;
+}
+.dd{
+    box-shadow:  rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    display: none;
+   
+}
+.dds{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+}
+a{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+a:hover {
+    color: rgb(35,229,219);
+  }
+  select>option{
+    outline: none;
+    text-decoration: none;
+  }
+.arrowicon{
+    position: relative;
+    top: 10px;
 }
