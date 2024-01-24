@@ -254,7 +254,7 @@ function FiltCar() {
             Below 1 Lac
           </div>
           <div
-          <div
+          
           style={{
             border: "1px solid black",
             width: "90%",
