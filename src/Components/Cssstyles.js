@@ -70,3 +70,91 @@ export const CardWrapper = styled.div`
     div:nth-child(2) {
         margin: 0 0 0 5%;
     }
+
+    
+    div:nth-child(2) > p:nth-child(1) {
+        font-size: 20px;
+        font-weight: 700;
+        color: #002F34;
+        margin-bottom: -0.9%;
+    }
+
+    div:nth-child(2) > p:nth-child(2) {
+        font-size: 14px;
+        margin-bottom: -0.9%;
+        color: #5C7A7D;
+    }
+
+    div:nth-child(2) > p:nth-child(3) {
+        font-size: 14px;
+        margin-bottom: -0.1%;
+        color: #5C7A7D;
+    }
+
+    div:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 12px;
+    }
+
+    div:nth-child(3) > p:nth-child(1) {
+        margin-left: 3.5%;
+    }
+
+`
+
+export const CardLinkWrap = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
+
+export const LoadingSpinner = styled.div`
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid blue;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: 10px auto;
+  margin-top: 12%;
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
+export const LoadMoreData = styled.div`
+  button {
+    border: 1px solid blue;
+    border-radius: 3px;
+    padding: 0.4%;
+    font-size: 17px;
+    color: #002f34;
+    margin-top: 1%;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: white;
+    background-color: blue;
+    padding: 0.5%;
+  }
+`;
