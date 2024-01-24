@@ -22,3 +22,35 @@ export const CommericalVPage = () => {
   };
 
   return isLoading ? (
+    <LoadingIndicator />
+  ) : (
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          width: "90%",
+          margin: "auto",
+          marginTop: "3%",
+        }}
+      >
+        <div style={{ flexBasis: "35%" }}>
+          <FiltCar />
+        </div>
+        <div
+          style={{
+            border: "2px solid white",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-around",
+          }}
+        >
+          {Products.slice(0, data).map((item) => {
+            return <VehicleInformation key={item.id} {...item} />;
+          })}
+        </div>
+      </div>
+      <LoadMoreButton loadMoreItems={loadMoreItems} />
+    </>
+  );
+};
