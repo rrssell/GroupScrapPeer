@@ -105,3 +105,46 @@ function FiltCar() {
       </div>
       <br />
       <hr />
+      <div style={{ color: "rgba(0,47,52,.64)", marginBottom: "3%" }}>
+        Filters
+      </div>
+
+      <div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            border: "1px solid black",
+            width: "90%",
+            padding: "5%",
+          }}
+        >
+          <input
+            style={{ border: "none" }}
+            type="text"
+            placeholder="Search brand or model"
+          />
+          <div style={{ flexGrow: "1" }}></div>
+          <SearchOutlined />
+        </div>
+      </div>
+      <br />
+
+      <div>ALL BRANDS</div>
+      <div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+            value="Maruti Suzuki"
+            checked={brand.includes("Maruti Suzuki")}
+            onChange={handleChange}
+          />
+          Maruti Suzuki
+        </div>
+        <div style={{ padding: "2% 5%" }}>
+          <input
+            style={{ marginRight: "5px", color: "black" }}
+            type="checkbox"
+            value="Toyota"
+            checked={brand.includes("Toyota")}
