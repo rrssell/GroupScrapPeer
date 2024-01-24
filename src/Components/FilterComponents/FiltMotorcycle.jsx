@@ -233,3 +233,130 @@ function FiltMotorcycle() {
             Below 10000 KM
           </div>
           <div
+           style={{
+            border: "1px solid black",
+            width: "90%",
+            marginTop: "5px",
+            padding: "2% 5%",
+            color: "#002f34",
+          }}
+        >
+          10000 KM - 20000 KM
+        </div>
+        <div
+          style={{
+            border: "1px solid black",
+            width: "90%",
+            marginTop: "5px",
+            padding: "2% 5%",
+            color: "#002f34",
+          }}
+        >
+          20000 KM - 30000 KM
+        </div>
+        <div
+          style={{
+            border: "1px solid black",
+            width: "90%",
+            marginTop: "5px",
+            padding: "2% 5%",
+            color: "#002f34",
+          }}
+        >
+          30000 KM - 40000 KM
+        </div>
+        <div
+          style={{
+            border: "1px solid black",
+            width: "90%",
+            marginTop: "5px",
+            padding: "2% 5%",
+            color: "#002f34",
+          }}
+        >
+          40000 KM - 50000 KM
+        </div>
+        <div
+          style={{
+            border: "1px solid black",
+            width: "90%",
+            marginTop: "5px",
+            padding: "2% 5%",
+            color: "#002f34",
+          }}
+        >
+          50000 KM and Above
+        </div>
+      </div>
+    )}
+    <br />
+    <hr />
+
+    <div style={{ display: "flex", alignItems: "center" }}>
+      <div style={{ marginRight: "10px" }}>YEAR</div>
+      <div style={{ flexGrow: "1" }}></div>
+      {!year ? (
+        <DownOutlined onClick={() => setYear(!year)} />
+      ) : (
+        <UpOutlined onClick={() => setYear(!year)} />
+      )}
+    </div>
+
+    {year && (
+      <div>
+        <div style={{ marginTop: "5px", marginBottom: "5px" }}>
+          Choose from options below
+        </div>
+        <div
+          style={{
+            border: "1px solid black",
+            width: "90%",
+            marginTop: "5px",
+            padding: "2% 5%",
+            color: "#002f34",
+          }}
+        >
+          Under 3 Years
+        </div>
+        <div
+          style={{
+            border: "1px solid black",
+            width: "90%",
+            marginTop: "5px",
+            padding: "2% 5%",
+            color: "#002f34",
+          }}
+        >
+          Under 5 Years
+        </div>
+        <div
+          style={{
+            border: "1px solid black",
+            width: "90%",
+            marginTop: "5px",
+            padding: "2% 5%",
+            color: "#002f34",
+          }}
+        >
+          Under 7 Years
+        </div>
+        <div
+          style={{
+            border: "1px solid black",
+            width: "90%",
+            marginTop: "5px",
+            padding: "2% 5%",
+            color: "#002f34",
+          }}
+        >
+          7 Years and Above
+        </div>
+      </div>
+    )}
+    <br />
+    <hr />
+  </div>
+);
+}
+
+export default FiltMotorcycle;
