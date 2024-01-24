@@ -38,3 +38,62 @@
     font-size: 40px;
     margin-top: 20px;
  }
+ h1~p{
+    font-size: 30px;
+    /* font-weight: ; */
+ }
+ .fm1b{
+    margin-top: -12px;
+ }
+ .fm1c{
+    text-align: center;
+    border-left: 2px solid grey;
+    
+ }
+ .fm1c>h3{
+   margin-top: 50px;
+ }
+ .fm2>div{
+    width:23%;
+    height:100%;
+    margin-bottom: 20px;
+    /* border:1px solid teal; */
+ }
+ .social{
+    display:flex;
+    font-size: 20px;
+    margin-bottom: 80px;
+    gap:10px;
+    margin-top: 20px;
+ }
+ .fm2e>div>h4{
+margin-bottom: -20px;
+ }
+ .fm3{
+    display:flex;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+ }
+ a{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+a:hover {
+    color: rgb(35,229,219);
+  }
+  .fm1cimg{
+   display:flex;
+   gap:25px;
+   justify-content: center;
+   
+  }
+  .fimg{
+   display:flex;
+   align-items: flex-end;
+   gap:20px;
+  }
