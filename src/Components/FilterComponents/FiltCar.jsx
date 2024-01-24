@@ -48,3 +48,60 @@ function FiltCar() {
 
   //sorting
   const handleSort = (e) => {
+    let radioValue = e.target.value;
+    setSortBy(radioValue);
+  };
+
+  //reseting
+  const handleReset = () => {
+    if (brand || sortBy) {
+      setSortBy("");
+      setBrand([]);
+      dispatch(getAtypeproduct());
+    }
+  };
+  return (
+    <div
+      style={{
+        textAlign: "left",
+        width: "300px",
+        padding: "2% 2%",
+        boxSizing: "border-box",
+        border: "none",
+      }}
+    >
+      <div style={{ fontSize: "23px", fontWeight: "bold" }}>
+        Used Cars in India
+      </div>
+      <br />
+      <div>
+        <select style={{ border: "none" }}>
+          <option value="0" style={{ fontSize: "14px", fontWeight: "600" }}>
+            CATEGORIES
+          </option>
+          <option value="1">Cars</option>
+          <option value="2">Motor Cycles</option>
+          <option value="3">For Sale: Houses & Apartments</option>
+          <option value="4">Scooters</option>
+          <option value="5">Commercial and Other Vehicles</option>
+          <option value="6">For Rent: Houses & Apartments</option>
+        </select>
+      </div>
+      <br />
+      <hr />
+      <div>
+        <select style={{ border: "none" }}>
+          <option value="0" style={{ fontSize: "16px", fontWeight: "700" }}>
+            LOCATIONS
+          </option>
+          <option value="1">India</option>
+          <option value="2">Maharashtra</option>
+          <option value="3">Tamil Nadu</option>
+          <option value="4">Uttar Pradesh</option>
+          <option value="5">Kerala</option>
+          <option value="6">Delhi</option>
+          <option value="4">Punjab</option>
+        </select>
+      </div>
+      <br />
+      <hr />
