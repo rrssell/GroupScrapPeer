@@ -143,3 +143,93 @@ function FiltMotorcycle() {
         <div>
           <div style={{ marginTop: "5px", marginBottom: "5px" }}>
             Choose from options below
+            </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "#002f34",
+              padding: "2% 5%",
+            }}
+          >
+            Below 10000
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "#002f34",
+              padding: "2% 5%",
+            }}
+          >
+            10000 - 20000
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "#002f34",
+              padding: "2% 5%",
+            }}
+          >
+            20000 - 40000
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "#002f34",
+              padding: "2% 5%",
+            }}
+          >
+            40000 - 70000
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "#002f34",
+              padding: "2% 5%",
+            }}
+          >
+            70000 and Above
+          </div>
+        </div>
+      )}
+      <br />
+      <hr />
+
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ marginRight: "10px" }}>KM DRIVEN</div>
+        <div style={{ flexGrow: "1" }}></div>
+        {!kilometer ? (
+          <DownOutlined onClick={() => setKilometer(!kilometer)} />
+        ) : (
+          <UpOutlined onClick={() => setKilometer(!kilometer)} />
+        )}
+      </div>
+
+      {kilometer && (
+        <div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "#002f34",
+            }}
+          >
+            Below 10000 KM
+          </div>
+          <div
