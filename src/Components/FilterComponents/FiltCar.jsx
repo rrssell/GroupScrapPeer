@@ -450,3 +450,201 @@ function FiltCar() {
         </div>
       </div>
     )}
+    <br />
+      <hr />
+
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ marginRight: "10px" }}>KM DRIVEN</div>
+        <div style={{ flexGrow: "1" }}></div>
+        {!kilometer ? (
+          <DownOutlined onClick={() => setKilometer(!kilometer)} />
+        ) : (
+          <UpOutlined onClick={() => setKilometer(!kilometer)} />
+        )}
+      </div>
+
+      {kilometer && (
+        <div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            Below 25000 KM
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            25000 KM - 50000 KM
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            50000 KM - 75000 KM
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            75000 KM - 100000 KM
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            100000 KM and Above
+          </div>
+        </div>
+      )}
+      <br />
+      <hr />
+
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ marginRight: "10px" }}>FUEL</div>
+        <div style={{ flexGrow: "1" }}></div>
+        {!fuel ? (
+          <DownOutlined onClick={() => setFuel(!fuel)} />
+        ) : (
+          <UpOutlined onClick={() => setFuel(!fuel)} />
+        )}
+      </div>
+
+      {fuel && (
+        <div>
+          <div style={{ marginTop: "5px", marginBottom: "5px" }}>
+            Choose from below options
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            Petrol
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            Diesel
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            LPG
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            CNG & Hybrids
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            Electric
+          </div>
+        </div>
+      )}
+      <br />
+      <hr />
+
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ marginRight: "10px" }}>TRANSMISSION</div>
+        <div style={{ flexGrow: "1" }}></div>
+        {!transmission ? (
+          <DownOutlined onClick={() => setTransmission(!transmission)} />
+        ) : (
+          <UpOutlined onClick={() => setTransmission(!transmission)} />
+        )}
+      </div>
+
+      {transmission && (
+        <div>
+          <div style={{ marginTop: "5px", marginBottom: "5px" }}>
+            Choose from options below
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            Automatic
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            Manual
+          </div>
+        </div>
+      )}
+      <br />
+      <hr />
+      <div>
+        <input
+          type="radio"
+          value="asc"
+          name="soryBy"
+          checked={sortBy === "asc"}
+          onChange={handleSort}
+        />
+        <label>By Inc Year</label> <br />
+        <input
+          type="radio"
+          value="desc"
+          name="soryBy"
+          checked={sortBy === "desc"}
+          onChange={handleSort}
+        />
+        <label>By Dec Year</label>
+      </div>
+      <br />
+      <div>
+        <button onClick={handleReset}>Reset Filter</button>
+      </div>
+    </div>
+  );
+}
+
+export default FiltCar;
