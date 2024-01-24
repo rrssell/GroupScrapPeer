@@ -12,15 +12,13 @@ function FiltSale() {
 
   return (
     <div
-      style={{
-        textAlign: "left",
-        width: "300px",
-        padding: "2% 2%",
-        boxSizing: "border-box",
-        border: "none",
-      }}
+      style={{ textAlign: "left",
+      width: "300px",
+      padding: "2% 2%",
+      boxSizing: "border-box",
+      border: "none"  }}
     >
-      <div style={{ fontSize: "23px", fontWeight: "bold" }}>
+      <div style={{ fontSize: "23px", fontWeight: "bold"  }}>
         Houses & Apartments For Sale
       </div>
       <br />
@@ -401,7 +399,9 @@ function FiltSale() {
         <div style={{ marginRight: "10px" }}>CONSTRUCTION STATUS</div>
         <div style={{ flexGrow: "1" }}></div>
         {!construction ? (
-          <DownOutlined onClick={() => setConstruction(!construction)} />
+          <DownOutlined
+            onClick={() => setConstruction(!construction)}
+          />
         ) : (
           <UpOutlined onClick={() => setConstruction(!construction)} />
         )}

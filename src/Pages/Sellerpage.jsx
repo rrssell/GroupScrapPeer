@@ -104,7 +104,7 @@ const Sellerpage = () => {
                             sbox.style.display="none";
                           }
   };
-  return (<></>
+  return (<>
   <Heading fontSize={"24px"} fontWeight="700" color="#002f34">CREATE TRADE</Heading>
   <Box className={styles.box}>
     <Heading fontSize={"16px"} fontWeight="700" color="#002f34" marginLeft="-600px">CHOOSE A CATEGORY</Heading>
