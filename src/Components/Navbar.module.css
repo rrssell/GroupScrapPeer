@@ -50,3 +50,55 @@
     margin-left:30px;
     border-radius: 5px;
 }
+
+.s2{
+    
+  border:white;
+  text-decoration: none; 
+  font-size:16px;
+  width:100%;
+  padding:10px;
+
+}
+.last{
+    display:flex;
+    /* border:1px solid blue; */
+    width:450px;
+    height:100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+.nav2{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    width:100%;
+    height:60px;
+    display:flex;
+
+}
+.a{
+    margin-bottom: 20px;
+}
+.nav2a{
+    display:flex;
+    width:200px;
+    /* border:1px solid yellowgreen; */
+    height:100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+.nav2a{
+    font-size:18px;
+}
+.nav2b{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    width:80%;
+    /* border:1px solid blue; */
+
+
+}
