@@ -10,7 +10,7 @@ export const getProducts=(params)=>(dispatch)=>{
 
 export const getAtypeproduct=({type})=>(dispatch)=>{
     dispatch({type:GET_ATYPE_PRODUCTS_REQUEST});
-    axios.get(` /${type}`)
+    axios.get(`https://red-violet-salmon-wrap.cyclic.app/${type}`)
     .then((r)=>dispatch({type:GET_ATYPE_PRODUCTS_SUCCESS,payload:r.data}))
     .catch((err)=>dispatch({type:GET_ATYPE_PRODUCTS_FAILURE}))
 }

@@ -105,6 +105,7 @@ function FiltCar() {
       </div>
       <br />
       <hr />
+
       <div style={{ color: "rgba(0,47,52,.64)", marginBottom: "3%" }}>
         Filters
       </div>
@@ -254,203 +255,202 @@ function FiltCar() {
             Below 1 Lac
           </div>
           <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "black",
+              padding: "2% 5%",
+            }}
+          >
+            1 Lac - 2 Lac
+          </div>
           <div
-          style={{
-            border: "1px solid black",
-            width: "90%",
-            marginTop: "5px",
-            paddingLeft: "2px",
-            color: "black",
-            padding: "2% 5%",
-          }}
-        >
-          1 Lac - 2 Lac
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "black",
+              padding: "2% 5%",
+            }}
+          >
+            2 Lac - 3 Lac
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "black",
+              padding: "2% 5%",
+            }}
+          >
+            3 Lac - 5 Lac
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              paddingLeft: "2px",
+              color: "black",
+              padding: "2% 5%",
+            }}
+          >
+            5 Lac and Above
+          </div>
         </div>
-        <div
-          style={{
-            border: "1px solid black",
-            width: "90%",
-            marginTop: "5px",
-            paddingLeft: "2px",
-            color: "black",
-            padding: "2% 5%",
-          }}
-        >
-          2 Lac - 3 Lac
-        </div>
-        <div
-          style={{
-            border: "1px solid black",
-            width: "90%",
-            marginTop: "5px",
-            paddingLeft: "2px",
-            color: "black",
-            padding: "2% 5%",
-          }}
-        >
-          3 Lac - 5 Lac
-        </div>
-        <div
-          style={{
-            border: "1px solid black",
-            width: "90%",
-            marginTop: "5px",
-            paddingLeft: "2px",
-            color: "black",
-            padding: "2% 5%",
-          }}
-        >
-          5 Lac and Above
-        </div>
-      </div>
-    )}
-    <br />
-    <hr />
-
-    <div style={{ display: "flex", alignItems: "center" }}>
-      <div style={{ marginRight: "10px" }}>YEAR</div>
-      <div style={{ flexGrow: "1" }}></div>
-      {!year ? (
-        <DownOutlined onClick={() => setYear(!year)} />
-      ) : (
-        <UpOutlined onClick={() => setYear(!year)} />
       )}
-    </div>
+      <br />
+      <hr />
 
-    {year && (
-      <div>
-        <div style={{ marginTop: "5px", marginBottom: "5px" }}>
-          Choose from options below
-        </div>
-        <div
-          style={{
-            border: "1px solid black",
-            width: "90%",
-            marginTop: "5px",
-            padding: "2% 5%",
-            color: "black",
-          }}
-        >
-          Under 3 Years
-        </div>
-        <div
-          style={{
-            border: "1px solid black",
-            width: "90%",
-            marginTop: "5px",
-            padding: "2% 5%",
-            color: "black",
-          }}
-        >
-          Under 5 Years
-        </div>
-        <div
-          style={{
-            border: "1px solid black",
-            width: "90%",
-            marginTop: "5px",
-            padding: "2% 5%",
-            color: "black",
-          }}
-        >
-          Under 7 Years
-        </div>
-        <div
-          style={{
-            border: "1px solid black",
-            width: "90%",
-            marginTop: "5px",
-            padding: "2% 5%",
-            color: "black",
-          }}
-        >
-          7 Years and Above
-        </div>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ marginRight: "10px" }}>YEAR</div>
+        <div style={{ flexGrow: "1" }}></div>
+        {!year ? (
+          <DownOutlined onClick={() => setYear(!year)} />
+        ) : (
+          <UpOutlined onClick={() => setYear(!year)} />
+        )}
       </div>
-    )}
-    <br />
-    <hr />
 
-    <div style={{ display: "flex", alignItems: "center" }}>
-      <div style={{ marginRight: "10px" }}>NO. OF OWNERS</div>
-      <div style={{ flexGrow: "1" }}></div>
-      {!owner ? (
-        <DownOutlined onClick={() => setOwner(!owner)} />
-      ) : (
-        <UpOutlined onClick={() => setOwner(!owner)} />
+      {year && (
+        <div>
+          <div style={{ marginTop: "5px", marginBottom: "5px" }}>
+            Choose from options below
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            Under 3 Years
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            Under 5 Years
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            Under 7 Years
+          </div>
+          <div
+            style={{
+              border: "1px solid black",
+              width: "90%",
+              marginTop: "5px",
+              padding: "2% 5%",
+              color: "black",
+            }}
+          >
+            7 Years and Above
+          </div>
+        </div>
       )}
-    </div>
+      <br />
+      <hr />
 
-    {owner && (
-      <div>
-        <div style={{ marginTop: "5px", marginBottom: "5px" }}>
-          Choose from options below
-        </div>
-        <div style={{ padding: "2% 5%" }}>
-          <input
-            style={{ marginRight: "5px", color: "black" }}
-            type="checkbox"
-          />
-          First
-        </div>
-        <div style={{ padding: "2% 5%" }}>
-          <input
-            style={{ marginRight: "5px", color: "black" }}
-            type="checkbox"
-          />
-          Second
-        </div>
-        <div style={{ padding: "2% 5%" }}>
-          <input
-            style={{ marginRight: "5px", color: "black" }}
-            type="checkbox"
-          />
-          Third
-        </div>
-        <div style={{ padding: "2% 5%" }}>
-          <input
-            style={{ marginRight: "5px", color: "black" }}
-            type="checkbox"
-          />
-          Fourth
-        </div>
-        <div style={{ padding: "2% 5%" }}>
-          <input
-            style={{ marginRight: "5px", color: "black" }}
-            type="checkbox"
-          />
-          More than Four
-        </div>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ marginRight: "10px" }}>NO. OF OWNERS</div>
+        <div style={{ flexGrow: "1" }}></div>
+        {!owner ? (
+          <DownOutlined onClick={() => setOwner(!owner)} />
+        ) : (
+          <UpOutlined onClick={() => setOwner(!owner)} />
+        )}
       </div>
-    )}
-    <br />
-    <hr />
 
-    <div style={{ display: "flex", alignItems: "center" }}>
-      <div style={{ marginRight: "10px" }}>INSPECTION STATUS</div>
-      <div style={{ flexGrow: "1" }}></div>
-      {!inspection ? (
-        <DownOutlined onClick={() => setInspection(!inspection)} />
-      ) : (
-        <UpOutlined onClick={() => setInspection(!inspection)} />
+      {owner && (
+        <div>
+          <div style={{ marginTop: "5px", marginBottom: "5px" }}>
+            Choose from options below
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            First
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            Second
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            Third
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            Fourth
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            More than Four
+          </div>
+        </div>
       )}
-    </div>
+      <br />
+      <hr />
 
-    {inspection && (
-      <div>
-        <div style={{ marginTop: "5px", marginBottom: "5px" }}>
-          Choose from below options
-        </div>
-        <div style={{ padding: "2% 5%" }}>
-          <input
-            style={{ marginRight: "5px", color: "black" }}
-            type="checkbox"
-          />
-          Inspected Cars Only
-        </div>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ marginRight: "10px" }}>INSPECTION STATUS</div>
+        <div style={{ flexGrow: "1" }}></div>
+        {!inspection ? (
+          <DownOutlined onClick={() => setInspection(!inspection)} />
+        ) : (
+          <UpOutlined onClick={() => setInspection(!inspection)} />
+        )}
       </div>
-    )}
-    <br />
+
+      {inspection && (
+        <div>
+          <div style={{ marginTop: "5px", marginBottom: "5px" }}>
+            Choose from below options
+          </div>
+          <div style={{ padding: "2% 5%" }}>
+            <input
+              style={{ marginRight: "5px", color: "black" }}
+              type="checkbox"
+            />
+            Inspected Cars Only
+          </div>
+        </div>
+      )}
+      <br />
       <hr />
 
       <div style={{ display: "flex", alignItems: "center" }}>
