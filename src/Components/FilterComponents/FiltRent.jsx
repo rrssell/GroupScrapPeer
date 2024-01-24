@@ -12,15 +12,13 @@ function FiltRent() {
 
   return (
     <div
-      style={{
-        textAlign: "left",
-        width: "300px",
-        padding: "2% 2%",
-        boxSizing: "border-box",
-        border: "none",
-      }}
+      style={{  textAlign: "left",
+      width: "300px",
+      padding: "2% 2%",
+      boxSizing: "border-box",
+      border: "none" }}
     >
-      <div style={{ fontSize: "23px", fontWeight: "bold" }}>
+      <div style={{ fontSize: "23px", fontWeight: "bold"  }}>
         Houses & Apartments For Rent
       </div>
       <br />

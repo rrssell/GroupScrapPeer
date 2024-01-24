@@ -49,35 +49,35 @@ export const CarPage = () => {
 
   return isLoading ? (
     <LoadingIndicator />
-    ) : (
-      <>
+  ) : (
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          width: "90%",
+          margin: "auto",
+          marginTop: "3%",
+        }}
+      >
+        <div style={{ flexBasis: "35%" }}>
+          <FiltCar />
+        </div>
         <div
           style={{
+            border: "3px solid white",
             display: "flex",
+            flexBasis: "63",
+            flexWrap: "wrap",
             justifyContent: "space-around",
-            width: "90%",
-            margin: "auto",
-            marginTop: "3%",
           }}
         >
-          <div style={{ flexBasis: "35%" }}>
-            <FiltCar />
-          </div>
-          <div
-            style={{
-              border: "3px solid white",
-              display: "flex",
-              flexBasis: "63",
-              flexWrap: "wrap",
-              justifyContent: "space-around",
-            }}
-          >
-            {Products.slice(0, data).map((item) => {
-              return <VehicleInformation key={item.id} {...item} item={item} />;
-            })}
-          </div>
+          {Products.slice(0, data).map((item) => {
+            return <VehicleInformation key={item.id} {...item} item={item} />;
+          })}
         </div>
-        <LoadMoreButton loadMoreItems={loadMoreItems} />
-      </>
-    );
-  };
+      </div>
+      <LoadMoreButton loadMoreItems={loadMoreItems} />
+    </>
+  );
+};
